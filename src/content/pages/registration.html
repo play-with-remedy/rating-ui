@@ -1,0 +1,38 @@
+<head>
+    <title>Registration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.3/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../scripts/players.js"></script>
+</head>
+<body>
+<div class="container registration-wrapper">
+    <div class="registration-image registration-section">
+    </div>
+    <div class="registration-form-wrapper registration-section">
+        <h1>Присоединяйся</h1>
+        <p class="subhead"> Разборы от Интерактива!</p>
+        <form id="createPlayerForm">
+            <div class="input-wrapper">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name" />
+            </div>
+            <div class="input-wrapper">
+                <label for="surname">Фамилия</label>
+                <input type="text" name="surname" id="surname" />
+            </div>
+            <div class="input-wrapper">
+                <label for="nickname">Игровой Ник</label>
+                <input type="text" name="nickname" id="nickname" />
+            </div>
+            <div class="input-wrapper">
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password" />
+            </div>
+            <input class="submit-button" type="submit" value="Создать аккаунт">
+        </form>
+    </div>
+</div>
+</body>

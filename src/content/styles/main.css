@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Benzier-Sans-Bold;
+    src: url(../fonts/Benzier-Sans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Benzier-Sans-Regular;
+    src: url(../fonts/Benzier-Sans-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.registration-section {
+    width: 50%;
+    height: 100%;
+}
+
+.registration-image {
+    background-image: url(https://i.wfolio.ru/x/KfN2JhbB89-m6UeUSQ-43b-4LTDPyZVn/q6sVLUvjujnOk6mXbO2srbIKpPlcOqy0/t7rVx8PT5NFW95R5iPfYgEbcz9T9DM03/mjHu5nb3MiY0pLaVSfnIEvvsgGTLYWd3/DB3ADSLxnrANMZCME7ysOwZ5ppzwWD-U/3xE7Ik44Yjqhk_JEy-q2uVtvyRuwD_n5/8cUHcxGe6ew1qu83fWUSGIFjuqZmmTDi/TtUsg0krfywdJ_y4uDOzIIU4--ZvcRrQ/y56kV1wXU3Y9k7bJeW0nlVeDaSQjio_x/-9Si5XVUkuFvZ9u2XZGJGLmeC0eUFYFf/2uCd7-SrjPKgSbsZgpz6LdbRo4WbqPqh/u-AZBHjtldRN_FnaNZDAVFB52NBQXe_A/wXDMBK7tfdop0QvX82-G1JOvbov7ygO2/G5wwrVZm8t6RfdY_U0m37QdA6U23bgHH/v_WHnc758snDbcVSIjfYPSD2YDLC6z_e/UaLgDXmraO9AcPuJC6nMWCX6_pCSoFZc/pYGiHmEpfAi8kCJFdII47GZSL1vaY3BL/JKse1yIbKk4.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+
+.registration-wrapper {
+    display: flex;
+    margin: auto;
+    height: 100%;
+}
+
+.registration-form-wrapper {
+    background-color: #2f3542;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.registration-form-wrapper h1 {
+    color: #dfe4ea;
+    text-align: center;
+    font: normal normal normal 35px/27px Benzier-Sans-Bold;
+    margin: 10px 0;
+}
+
+.registration-form-wrapper .subhead {
+    color: #ffa502;
+    text-align: center;
+    font: normal normal normal 14px / 18px Benzier-Sans-Regular;
+    margin: 10px 0;
+}
+
+.input-wrapper {
+    margin: 30px 0;
+}
+
+.registration-section .input-wrapper label {
+    display: block;
+    color: #dfe4ea;
+    margin-bottom: 5px;
+    font: normal normal normal 16px/24px Benzier-Sans-Regular;
+    text-transform: uppercase;
+}
+
+.registration-section .input-wrapper input {
+    height: 40px;
+    width: 450px;
+    outline: none;
+}
+
+.registration-form-wrapper .submit-button {
+    height: 50px;
+    width: 450px;
+    font: normal normal normal 16px/24px Benzier-Sans-Bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+    padding-top: 5px;
+    background-color: #ffa502;
+    border: none;
+    color: white;
+}
