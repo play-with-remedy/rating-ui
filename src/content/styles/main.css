@@ -15,6 +15,7 @@ body {
 
 .container {
     max-width: 1200px;
+    margin: auto;
 }
 
 .registration-section {
@@ -30,7 +31,6 @@ body {
 
 .registration-wrapper {
     display: flex;
-    margin: auto;
     height: 100%;
 }
 
