@@ -1,0 +1,43 @@
+body {
+    background: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/dark-abstract-background-wallpaper-black-and-orange-free-photo.jpg);
+    background-size: cover;
+}
+
+.games-grid {
+    display: grid;
+    justify-items: center;
+    justify-content: space-around;
+    grid-template-columns: 200px 200px 200px;
+    margin-top: 50px;
+    list-style-type: none;
+}
+
+.games-grid li {
+    width: 320px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.evening-image {
+    width: 100%;
+    height: 240px;
+    background: url(https://img.freepik.com/free-vector/unfocused-winter-landscape-with-snowflakes_1393-210.jpg);
+    text-align: center;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+
+.evening-date {
+    font: normal normal normal 80px / 50px Benzier-Sans-Bold;
+    margin: 10px
+}
+
+.evening-number {
+    font: normal normal normal 30px / 70px Benzier-Sans-Regular;
+    margin: 10px
+}
+
+.evening-info {
+    color: white;
+}
+
