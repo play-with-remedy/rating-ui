@@ -21,19 +21,19 @@ $(document).ready(function() {
         }, {});
 
         const sortedArray = Object.entries(groupedDataWithSum)
-            .sort(([, a], [, b]) => b.totalScore - a.totalScore)
-
-        console.log(sortedArray);
+            .sort(([, a], [, b]) => (b.totalScore/b.games) - (a.totalScore/a.games));
 
         createTable(sortedArray);
     });
 
     function createTable(sortedArray) {
         $.get( "http://localhost:8080/api/users", function(users) {
-            let table = "<tr><th>#</th><th>Игрок</th><th>Всего игр</th><th>Балы за игру</th><th>Балы от судей</th><th>Сумма</th></tr>";
+            let table = "<tr><th>#</th><th>Игрок</th><th>Всего игр</th><th>Балы за игру</th><th>Балы от судей</th><th>Сумма</th>" +
+            "<th>Средний от судей</th><th>Средняя Сумма</th></tr>";
             sortedArray.forEach((player, index) => {
                 table += `<tr><td>${index + 1}</td><td>${users.find(user => user.id.toString() === player[0]).nickname}</td>` +
-                `<td>${player[1].games}</td><td>${player[1].gameScore}</td><td>${player[1].judgeScore}</td><td>${player[1].totalScore}</td>`
+                `<td>${player[1].games}</td><td>${player[1].gameScore}</td><td>${player[1].judgeScore}</td><td>${player[1].totalScore}</td>` +
+                `<td>${(player[1].judgeScore / player[1].games).toFixed(2)}</td><td>${(player[1].totalScore / player[1].games).toFixed(2)}</td>`;
             });
 
             $("#rating").append(table);

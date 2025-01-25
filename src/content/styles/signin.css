@@ -1,0 +1,14 @@
+@import './colors.css';
+
+.sign-in-title {
+    margin-bottom: 30px;
+}
+
+.sign-in-info {
+    text-align: center;
+    color: var(--color-anti-flash-white);
+}
+
+.registration-link {
+    color: var(--color-orange);
+}

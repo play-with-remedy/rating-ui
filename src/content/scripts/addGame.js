@@ -43,8 +43,8 @@ $(document).ready(function() {
         });
     });
     function createTable(players) {
-        let table = "<table id='gameTable'><tr><th>#</th><th>Игрок</th><th>Роль</th><th>Очки</th><th>Ведущий</th><th>ЛХ</th><th>Ci</th><th>Штраф</th></tr>";
-        let playerSelector = "<select name='userId'><option disabled selected hidden>";
+        let table = "<table id='gameTable' class='game-table'><tr><th>#</th><th>Игрок</th><th>Роль</th><th>Очки</th><th>Ведущий</th><th>ЛХ</th><th>Ci</th><th>Штраф</th></tr>";
+        let playerSelector = "<select name='userId'><option disabled selected hidden>Выберите игрока</option>";
 
         players.forEach((player) => {
             playerSelector += `<option value='${player.id}'>${player.nickname}</option>`;
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
         for (let i = 1; i <= 10; i++) {
             table += `<tr><td>${i}</td><td>${playerSelector}</td>`;
-            table += `<td><select name='role'><option disabled selected hidden></option><option value='CITIZEN'>Мирный Житель</option>` +
+            table += `<td><select name='role'><option disabled selected hidden>Выеберите роль</option><option value='CITIZEN'>Мирный Житель</option>` +
                      `<option value='MAFIA'>Мафия</option><option value='DON'>Дон</option><option value='SHERIF'>Шериф</option></select></td>`;
             table += `<td><select name='gameScore'><option selected value='0'>0</option><option value='2.5'>2,5</option><option value='-2.5'>-2,5</option></select></td>`;
             table += `<td><select name='judgeScore'><option selected value='0'>0</option><option value="0.25">0,25</option><option value="0.5">0,5</option><option value="0.75">0,75</option>` +

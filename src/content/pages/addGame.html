@@ -3,30 +3,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="../styles/allGames.css" />
+    <link rel="stylesheet" href="../styles/addGame.css" />
     <script src="https://cdn.jsdelivr.net/npm/moment@2.29.3/moment.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../scripts/addGame.js"></script>
 </head>
 <body>
-<div class="container add-game-wrapper">
-    <form id="createGameForm">
-        <div class="input-wrapper">
-            <label for="date">Дата игры</label>
-            <input type="date" name="date" id="date" />
-        </div>
-        <div id="gameTableWrapper">
-        </div>
-        <div class="input-wrapper">
-            <label for="result">Результат</label>
-            <select name="result" id="result" >
-                <option disabled selected hidden></option>
-                <option value="citizen">Мирные</option>
-                <option value="mafia">Мафия</option>
-                <option value="draw">Ничья</option>
-            </select>
-        </div>
-        <input type="submit" value="Сохранить" />
-    </form>
+<div class="page-container">
+    <header class="header">
+        <div class="logo">#InterMafia</div>
+        <nav class="nav-links">
+            <a href="rating.html">Рейтинг</a>
+            <a href="allGames.html">Разборы</a>
+            <a href="#tbd">Участники</a>
+        </nav>
+        <button class="sign-in-btn" onclick="window.location.href = 'signin.html'">Войти</button>
+    </header>
+    <div class="container add-game-wrapper">
+        <h1> Новая игра</h1>
+        <form id="createGameForm">
+            <div class="game-date">
+                <label for="date">Дата игры:</label>
+                <input type="date" name="date" id="date" />
+            </div>
+            <div class="game-result">
+                <label for="result">Результат:</label>
+                <select name="result" id="result" >
+                    <option disabled selected hidden></option>
+                    <option value="citizen">Мирные</option>
+                    <option value="mafia">Мафия</option>
+                    <option value="draw">Ничья</option>
+                </select>
+            </div>
+            <div id="gameTableWrapper" class="game-table-wrapper">
+            </div>
+            <input class="submit-button" type="submit" value="Сохранить" />
+        </form>
+    </div>
+<!--<footer class="footer">-->
+<!--    <div class="footer-logo">MyWebsite</div>-->
+<!--    <div class="social-links">-->
+<!--        <a href="https://facebook.com" target="_blank" aria-label="Facebook">-->
+<!--            <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" alt="Facebook">-->
+<!--        </a>-->
+<!--        <a href="https://twitter.com" target="_blank" aria-label="Twitter">-->
+<!--            <img src="https://img.icons8.com/ios-filled/30/ffffff/twitter.png" alt="Twitter">-->
+<!--        </a>-->
+<!--        <a href="https://instagram.com" target="_blank" aria-label="Instagram">-->
+<!--            <img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram">-->
+<!--        </a>-->
+<!--        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">-->
+<!--            <img src="https://img.icons8.com/ios-filled/30/ffffff/linkedin.png" alt="LinkedIn">-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <p class="footer-text">&copy; 2025 MyWebsite. All rights reserved.</p>-->
+<!--</footer>-->
 </div>
 </body>

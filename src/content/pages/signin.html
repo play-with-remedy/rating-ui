@@ -1,0 +1,30 @@
+<head>
+    <title>Sign In</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/signin.css" />
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.3/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../scripts/signin.js"></script>
+</head>
+<body>
+<div class="container registration-wrapper">
+    <div class="registration-image registration-section"></div>
+    <div class="registration-form-wrapper registration-section">
+        <h1 class="sign-in-title">Авторизация</h1>
+        <form id="sing-in-form">
+            <div class="input-wrapper">
+                <label for="nickname">Игровой Ник</label>
+                <input type="text" name="nickname" id="nickname" required/>
+            </div>
+            <div class="input-wrapper">
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password" required/>
+            </div>
+            <p class="sign-in-info">Первый раз? <a class="registration-link" href="registration.html">Регистрируйся!</a></p>
+            <input class="submit-button" type="submit" value="Войти">
+        </form>
+    </div>
+</div>
+</body>
