@@ -12,3 +12,11 @@
 .registration-link {
     color: var(--color-orange);
 }
+
+.sign-in-error {
+    color: var(--color-bruschetta-tomato);
+    text-align: center;
+    margin-top: 15px;
+    visibility: hidden;
+    font-size: 14px;
+}

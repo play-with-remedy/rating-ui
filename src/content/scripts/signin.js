@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    if (localStorage.userType) window.location.href = "home.html";
+
     $('#sing-in-form').on( "submit", function($event) {
         $event.preventDefault();
         const requestBody = {};
@@ -7,6 +9,16 @@ $(document).ready(function() {
 
         singInJson.forEach((field, index) => {
             requestBody[field.name] = field.value;
+        });
+
+        $.post("http://localhost:8080/api/users/signIn", requestBody, function(data) {
+            console.log(JSON.stringify(data));
+            if (data !== null && data.password !== "") {
+                localStorage.userType = data.type;
+                window.location.href = "home.html";
+            } else {
+                $(".sign-in-error").css("visibility", "visible");
+            }
         });
     });
 });

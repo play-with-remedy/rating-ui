@@ -1,10 +1,5 @@
 @import './colors.css';
 
-body {
-    background: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/dark-abstract-background-wallpaper-black-and-orange-free-photo.jpg);
-    background-size: cover;
-}
-
 .game-date,
 .game-result {
     display: inline-block;
@@ -127,7 +122,7 @@ select:focus {
     font: normal normal normal 16px/24px Benzier-Sans-Bold;
     text-transform: uppercase;
     padding-top: 5px;
-    background-color: var(--color-vivid-orange);
+    background-color: var(--color-orange);
     border: none;
     color: white;
     cursor: pointer;
