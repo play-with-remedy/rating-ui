@@ -12,9 +12,9 @@ $(document).ready(function() {
         });
 
         $.post("http://localhost:8080/api/users/signIn", requestBody, function(data) {
-            console.log(JSON.stringify(data));
             if (data !== null && data.password !== "") {
                 localStorage.userType = data.type;
+                localStorage.user = data.nickname;
                 window.location.href = "home.html";
             } else {
                 $(".sign-in-error").css("visibility", "visible");

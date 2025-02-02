@@ -84,6 +84,20 @@ body, html {
   color: var(--color-anti-flash-white);
 }
 
+.user-image {
+    width: 40px;
+    height: 40px;
+    display: none;
+    background: orange;
+    border-radius: 90%;
+    cursor: pointer;
+}
+
+.user-image p {
+    text-align: center;
+    font: normal normal normal 16px/44px Benzier-Sans-Regular;
+}
+
 /* Footer styles *//*
 .footer {
   background-color: #007bff;

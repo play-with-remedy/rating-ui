@@ -1,5 +1,9 @@
 $(document).ready(function() {
-    $.get( "http://localhost:8080/api/users", function( data ) {
-      alert(JSON.stringify(data) );
-    });
+    if (localStorage.userType && localStorage.user) {
+        const nickname = localStorage.user;
+        $(".sign-in-btn").css("display", "none");
+        $(".user-image").css("display", "block");
+        const initials = nickname.split(/\s+/).map(word => word.charAt(0).toUpperCase()).join('');
+        $(".user-image p").text(initials);
+    }
 });

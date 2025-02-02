@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../styles/addGame.css" />
     <script src="https://cdn.jsdelivr.net/npm/moment@2.29.3/moment.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../scripts/main.js"></script>
     <script src="../scripts/addGame.js"></script>
 </head>
 <body>
@@ -18,17 +19,18 @@
             <a href="#tbd">Участники</a>
         </nav>
         <button class="sign-in-btn" onclick="window.location.href = 'signin.html'">Войти</button>
+        <div class="user-image"><p></p></div>
     </header>
     <div class="container add-game-wrapper">
         <h1> Новая игра</h1>
         <form id="createGameForm">
             <div class="game-date">
                 <label for="date">Дата игры:</label>
-                <input type="date" name="date" id="date" />
+                <input type="date" name="date" id="date" required />
             </div>
             <div class="game-result">
                 <label for="result">Результат:</label>
-                <select name="result" id="result" >
+                <select name="result" id="result" required>
                     <option disabled selected hidden></option>
                     <option value="citizen">Мирные</option>
                     <option value="mafia">Мафия</option>
